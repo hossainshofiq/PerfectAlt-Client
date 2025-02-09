@@ -16,7 +16,7 @@
 ✔️ **Ensure protected access using JWT authentication**  
 ✔️ **Experience a fully responsive UI with engaging animations**  
 
- 
+![PerfectAlt Screenshot](src/assets/banner_secreenshot2.jpg)  
 
 ---
 
