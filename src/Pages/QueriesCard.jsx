@@ -14,7 +14,9 @@ const QueriesCard = ({ query }) => {
 
             <div className="card-body">
                 <h2 className="card-title text-lg md:text-xl font-bold">{query?.productName}</h2>
-                <p className="text-sm md:text-base text-gray-500">Brand: {query?.productBrand}</p>
+                <p className="text-sm md:text-base text-gray-700">
+                    <span className="font-semibold">Brand:</span> {query?.productBrand}
+                </p>
                 <p className="mt-2 text-sm md:text-base text-gray-700">
                     <span className="font-semibold">Query:</span> {query?.queryTitle}
                 </p>

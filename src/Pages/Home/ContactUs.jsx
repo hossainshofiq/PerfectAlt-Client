@@ -14,7 +14,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-10">
+        <div className="w-10/12 mx-auto px-4 py-10">
             <div className="bg-white shadow-lg rounded-none p-6 md:p-8 w-full border">
                 <div className="flex flex-col lg:flex-row gap-10">
                     <div className="flex flex-col gap-6 lg:w-1/2">

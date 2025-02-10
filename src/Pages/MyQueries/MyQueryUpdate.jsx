@@ -18,7 +18,7 @@ const MyQueryUpdate = () => {
         const formData = new FormData(e.target);
         const updatedQuery = Object.fromEntries(formData.entries());
 
-        axios.put(`https://product-recommendation-system-server-zeta.vercel.app/queries/${_id}`, updatedQuery)
+        axios.put(`http://localhost:5000/queries/${_id}`, updatedQuery)
             .then(res => {
                 if (res.data.modifiedCount) {
                     Swal.fire({

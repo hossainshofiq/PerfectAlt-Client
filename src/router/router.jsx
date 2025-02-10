@@ -15,6 +15,7 @@ import MyQueryDetails from '../Pages/MyQueries/MyQueryDetails';
 import MyQueryUpdate from './../Pages/MyQueries/MyQueryUpdate';
 import RecommendationForm from '../Pages/RecommendationForm';
 import RecentQueries from './../Pages/Home/RecentQueries';
+import About from '../Pages/About';
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
+                path: '/about',
+                element: <About></About>
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
             },
@@ -37,12 +42,12 @@ const router = createBrowserRouter([
             {
                 path: '/recentQueries',
                 element: <RecentQueries></RecentQueries>,
-                loader: () => fetch('https://product-recommendation-system-server-zeta.vercel.app/recentQueries'),
+                loader: () => fetch('http://localhost:5000/recentQueries'),
             },
             {
                 path: '/queries',
                 element: <Queries></Queries>,
-                loader: () => fetch('https://product-recommendation-system-server-zeta.vercel.app/queries'),
+                loader: () => fetch('http://localhost:5000/queries'),
             },
             {
                 path: '/myQueries',
@@ -61,21 +66,21 @@ const router = createBrowserRouter([
                 element: <PrivateRoute>
                     <RecommendationForm></RecommendationForm>
                 </PrivateRoute>,
-                loader: ({ params }) => fetch(`https://product-recommendation-system-server-zeta.vercel.app/queries/${params.id}`),
+                loader: ({ params }) => fetch(`http://localhost:5000/queries/${params.id}`),
             },
             {
                 path: '/myQueries/queryDetails/:id',
                 element: <PrivateRoute>
                     <MyQueryDetails></MyQueryDetails>
                 </PrivateRoute>,
-                loader: ({ params }) => fetch(`https://product-recommendation-system-server-zeta.vercel.app/queries/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/queries/${params.id}`)
             },
             {
                 path: 'myQueries/queryUpdate/:id',
                 element: <PrivateRoute>
                     <MyQueryUpdate></MyQueryUpdate>
                 </PrivateRoute>,
-                loader: ({ params }) => fetch(`https://product-recommendation-system-server-zeta.vercel.app/queries/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/queries/${params.id}`)
             },
             {
                 path: '/recommendationsForMe',

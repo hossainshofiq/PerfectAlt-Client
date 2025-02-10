@@ -3,6 +3,7 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 import { AiFillProduct } from "react-icons/ai";
 import { TbTruckDelivery } from "react-icons/tb";
 import { RiSecurePaymentFill } from "react-icons/ri";
+import { div } from 'motion/react-client';
 
 const HighlighterBrands = () => {
 
@@ -25,49 +26,48 @@ const HighlighterBrands = () => {
     ];
 
     return (
-        <div className="bg-[#111926] py-12">
-            <div className="max-w-7xl mx-auto px-4 text-center">
-                <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-white mb-10">
-                    Unleash Innovation with our Diverse Brand Selection!
-                </h2>
+        <div className='mt-10'>
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-center mb-10">
+                Unleash Innovation with our Diverse Brand Selection!
+            </h2>
+            <div className="bg-[#111926] py-6">
+                <div className="w-10/12 mx-auto px-4 text-center">
 
-                {/* all brands */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mb-10">
-                    {brands.map((brand, index) => (
-                        <div
-                            key={index}
-                            className="bg-white rounded-lg shadow-md p-4 flex items-center justify-center"
-                        >
-                            <img
-                                src={brand.logo}
-                                alt={brand.name}
-                                className="max-h-16 object-contain"
-                            />
-                        </div>
-                    ))}
+                    <h3 className="text-white font-semibold text-xl">Our All Brands</h3>
+
+                    {/* all brands */}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-5 mb-5">
+                        {brands.map((brand, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-lg shadow-md p-4 flex items-center justify-center"
+                            >
+                                <img
+                                    src={brand.logo}
+                                    alt={brand.name}
+                                    className="max-h-16 object-contain"
+                                />
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* all services */}
+                    <h3 className="text-white font-semibold text-xl">Our All Services</h3>
+                    <div className="mt-5 grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+                        {features.map((feature, index) => (
+                            <div
+                                key={index}
+                                className="flex flex-col items-center justify-center bg-white shadow-md rounded-lg p-6"
+                            >
+                                <div className="text-teal-500 text-5xl">{feature.icon}</div>
+                                <p className="mt-4 text-gray-800 font-semibold">{feature.title}</p>
+                            </div>
+                        ))}
+                    </div>
+
+
+
                 </div>
-
-                <button className="bg-teal-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-600 transition">
-                    Discover Our All Brands
-                </button>
-
-                {/* all services */}
-                <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
-                    {features.map((feature, index) => (
-                        <div
-                            key={index}
-                            className="flex flex-col items-center justify-center bg-white shadow-md rounded-lg p-6"
-                        >
-                            <div className="text-teal-500 text-5xl">{feature.icon}</div>
-                            <p className="mt-4 text-gray-800 font-semibold">{feature.title}</p>
-                        </div>
-                    ))}
-                </div>
-
-                <button className="bg-teal-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-600 transition">
-                    Discover Our All Services
-                </button>
-
             </div>
         </div>
     );

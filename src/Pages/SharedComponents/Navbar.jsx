@@ -18,7 +18,7 @@ const Navbar = () => {
     }
 
     const links = <>
-        <div className='lg:flex gap-3'>
+        <div className='lg:flex gap-1'>
             {
                 user ?
                     <>
@@ -27,11 +27,13 @@ const Navbar = () => {
                         <li><NavLink to='/recommendationsForMe'>Recommendations For Me</NavLink></li>
                         <li><NavLink to='/myQueries'>MY Queries</NavLink></li>
                         <li><NavLink to='/myRecommendations'>My Recommendations</NavLink></li>
+                        <li><NavLink to='/about'>About</NavLink></li>
                     </>
                     :
                     <>
                         <li><NavLink to='/'>Home</NavLink></li>
                         <li><NavLink to='/queries'>Queries</NavLink></li>
+                        <li><NavLink to='/about'>About</NavLink></li>
                     </>
             }
         </div>
@@ -39,6 +41,7 @@ const Navbar = () => {
 
     return (
         <div className="navbar bg-[#27006f] text-white sticky top-0 z-50">
+        {/* <div className="navbar bg-[#27006f] text-white fixed top-0 z-50 px-20"> */}
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

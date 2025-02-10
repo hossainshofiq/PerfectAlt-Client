@@ -13,7 +13,7 @@ import slider5 from '../../assets/HomeSliderImages/iPhone.jpg'
 
 const Slider = () => {
     return (
-        <div>
+        <div className=''>
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={50}

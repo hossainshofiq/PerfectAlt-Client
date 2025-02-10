@@ -49,7 +49,7 @@ const Register = () => {
                 navigate(location?.state || '/');
 
                 // const newUser = { name, email };
-                // fetch('https://product-recommendation-system-server-zeta.vercel.app/users', {
+                // fetch('http://localhost:5000/users', {
                 //     method: 'POST',
                 //     headers: {
                 //         'content-type': 'application/json'
@@ -62,7 +62,7 @@ const Register = () => {
                 //     })
 
                 const newUser = { name, email };
-                axios.post('https://product-recommendation-system-server-zeta.vercel.app/users', newUser)
+                axios.post('http://localhost:5000/users', newUser)
                 .then(res => {
                     // console.log("User created to db", res.data);
                 })
