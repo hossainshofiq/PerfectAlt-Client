@@ -11,7 +11,7 @@ const featuredQueries = [
         id: 2,
         title: "Top Wireless Earbuds for Music Lovers",
         description: "Discover the best wireless earbuds with excellent sound quality and battery life.",
-        image: "https://assets.newatlas.com/dims4/default/2fa4926/2147483647/strip/true/crop/1920x1079+0+0/resize/1920x1079!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2F2017-best-smartphones-specs-features-comparison-1.jpg",
+        image: "https://i.rtings.com/assets/pages/swLQ6KZD/best-iphone-earbuds-20230427-medium.jpg?format=auto",
     },
     {
         id: 3,
@@ -31,6 +31,24 @@ const featuredQueries = [
         description: "Compare top-rated smartwatches with fitness tracking and health monitoring features.",
         image: "https://static1.anpoimages.com/wordpress/wp-content/uploads/2024/07/best-android-smartwatches.jpg",
     },
+    {
+        id: 6,
+        title: "Top Noise-Canceling Headphones",
+        description: "Explore the best noise-canceling headphones for immersive audio and distraction-free listening.",
+        image: "https://i.pcmag.com/imagery/reviews/04krZvvKFLwbEDvWxwPsfTH-5..v1652284815.jpg",
+    },
+    {
+        id: 7,
+        title: "Best Mechanical Keyboards for Productivity",
+        description: "Find the best mechanical keyboards designed for fast and comfortable typing.",
+        image: "https://cdn.mos.cms.futurecdn.net/YS333JMytSFjFiRVPaWxWd.jpg",
+    },
+    {
+        id: 8,
+        title: "Top Tablets for Work and Entertainment",
+        description: "Check out the best tablets that balance performance, battery life, and portability.",
+        image: "https://media.wired.com/photos/673fc17b37facb64c2030834/16:9/w_2000,h_1125,c_limit/Samsung%20Galaxy%20Tab%20S10+%20Plus%20Abstract%20Background%20SOURCE%20Amazon.jpg",
+    },
 ];
 
 const FeaturedProducts = () => {
@@ -38,18 +56,18 @@ const FeaturedProducts = () => {
 
     return (
         <div className="pt-10">
-            <div className="bg-gray-100 py-10">
+            <div className="bg-base-300 py-8">
                 <div className="w-11/12 mx-auto text-center">
-                    <div className="mb-12">
-                        <p className="text-green-500 uppercase text-sm font-semibold">Featured Queries</p>
+                    <div className="pb-6">
+                        <p className="text-green-500 uppercase text-sm font-bold">Featured Queries</p>
                         <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-gray-800">Popular Product Recommendations</h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {(showAll ? featuredQueries : featuredQueries.slice(0, 3)).map(({ id, title, description, image }) => (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {(showAll ? featuredQueries : featuredQueries.slice(0, 4)).map(({ id, title, description, image }) => (
                             <div key={id} className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:-translate-y-1">
                                 <img src={image} alt={title} className="w-full object-cover rounded-lg mb-4" />
-                                <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+                                <h3 className="text-xl font-semibold text-gray-800 truncate">{title}</h3>
                                 <p className="text-gray-600 mt-2">{description}</p>
                                 {/* <button className="mt-4 px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600 transition">View Details</button> */}
                             </div>

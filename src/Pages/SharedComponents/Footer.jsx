@@ -1,6 +1,6 @@
 import React from 'react';
 import footerLogo from '../../assets/quires_logo.png'
-import { FaFacebook, FaGithub, FaLinkedin, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
     return (

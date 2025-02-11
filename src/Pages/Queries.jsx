@@ -45,55 +45,57 @@ const Queries = () => {
     };
 
     return (
-        <div className='w-11/12 mx-auto my-10'>
-            <div className='flex flex-wrap justify-between items-center gap-6'>
-                <div className='flex flex-col flex-wrap gap-7'>
-                    <h1 className='font-bold text-left text-2xl md:text-3xl lg:text-5xl'>All Queries</h1>
-                    <button
-                        onClick={handleSortByCount}
-                        className='btn btn-success text-white rounded-md shadow'>
-                        Sort By Recommended Count
-                        {flag ? '' : bool ? <FaArrowUp></FaArrowUp> : <FaArrowDown></FaArrowDown>}
-                    </button>
-                </div>
-                <div className="flex flex-col flex-wrap gap-4">
-                    <label className="input input-bordered flex items-center gap-2 w-full md:w-auto">
-                        <FaSearch></FaSearch>
-                        <input type="text" className="grow" placeholder="Search by product name" value={searchText} onChange={handleSearch} />
-                    </label>
+        <div className='bg-base-100'>
+            <div className='w-11/12 mx-auto py-10'>
+                <div className='flex flex-wrap justify-between items-center gap-6'>
+                    <div className='flex flex-col flex-wrap gap-7'>
+                        <h1 className='font-bold text-left text-2xl md:text-3xl lg:text-5xl'>All Queries</h1>
+                        <button
+                            onClick={handleSortByCount}
+                            className='btn btn-success text-white rounded-md shadow'>
+                            Sort By Recommended Count
+                            {flag ? '' : bool ? <FaArrowUp></FaArrowUp> : <FaArrowDown></FaArrowDown>}
+                        </button>
+                    </div>
+                    <div className="flex flex-col flex-wrap gap-4">
+                        <label className="input input-bordered flex items-center gap-2 w-full md:w-auto">
+                            <FaSearch></FaSearch>
+                            <input type="text" className="grow" placeholder="Search by product name" value={searchText} onChange={handleSearch} />
+                        </label>
 
-                    {/* Layout Toggle Buttons */}
-                    <div className="flex gap-2">
-                        <button
-                            onClick={() => handleGridChange(1)}
-                            className={`btn ${gridColumns === 1 ? 'btn-success text-white rounded-md shadow' : 'btn-outline rounded-md shadow'} hidden md:block`}
-                        >1 Column</button>
-                        <button
-                            onClick={() => handleGridChange(2)}
-                            className={`btn ${gridColumns === 2 ? 'btn-success text-white rounded-md shadow' : 'btn-outline rounded-md shadow'} hidden sm:block `}
-                        >2 Columns</button>
-                        <button
-                            onClick={() => handleGridChange(3)}
-                            className={`btn ${gridColumns === 3 ? 'btn-success text-white rounded-md shadow' : 'btn-outline rounded-md shadow'} hidden lg:block`}
-                        >3 Columns</button>
+                        {/* Layout Toggle Buttons */}
+                        <div className="flex gap-2">
+                            <button
+                                onClick={() => handleGridChange(1)}
+                                className={`btn ${gridColumns === 1 ? 'btn-success text-white rounded-md shadow' : 'btn-outline rounded-md shadow'} hidden md:block`}
+                            >1 Column</button>
+                            <button
+                                onClick={() => handleGridChange(2)}
+                                className={`btn ${gridColumns === 2 ? 'btn-success text-white rounded-md shadow' : 'btn-outline rounded-md shadow'} hidden sm:block `}
+                            >2 Columns</button>
+                            <button
+                                onClick={() => handleGridChange(3)}
+                                className={`btn ${gridColumns === 3 ? 'btn-success text-white rounded-md shadow' : 'btn-outline rounded-md shadow'} hidden lg:block`}
+                            >3 Columns</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className={`grid gap-6 pt-8`}
-                style={{ gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))` }}
-            >
-                {filteredQueries?.length > 0 ?
-                    (
-                        filteredQueries.map(query => <QueriesCard key={query._id} query={query}></QueriesCard>)
-                    ) : (
-                        <div className="text-center col-span-full">
-                            <h2 className="text-2xl font-semibold text-gray-700">
-                                No queries found for "{searchText}"
-                            </h2>
-                            <p className="text-gray-500">Try searching with a different product name.</p>
-                        </div>
-                    )}
+                <div className={`grid gap-6 pt-8`}
+                    style={{ gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))` }}
+                >
+                    {filteredQueries?.length > 0 ?
+                        (
+                            filteredQueries.map(query => <QueriesCard key={query._id} query={query}></QueriesCard>)
+                        ) : (
+                            <div className="text-center col-span-full">
+                                <h2 className="text-2xl font-semibold text-gray-700">
+                                    No queries found for "{searchText}"
+                                </h2>
+                                <p className="text-gray-500">Try searching with a different product name.</p>
+                            </div>
+                        )}
+                </div>
             </div>
         </div>
     );

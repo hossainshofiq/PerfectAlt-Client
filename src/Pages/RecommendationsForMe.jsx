@@ -15,8 +15,8 @@ const RecommendationsForMe = () => {
     }, [user.email]);
 
     return (
-        <div className="max-w-7xl mx-auto text-center my-10">
-            <h1 className="font-bold text-5xl mb-5 text-gray-800">
+        <div className="w-11/12 mx-auto text-center my-10">
+            <h1 className="font-bold text-5xl pb-6 text-gray-800">
                 Recommendations For Me: {recommendationsForMe.length}
             </h1>
 

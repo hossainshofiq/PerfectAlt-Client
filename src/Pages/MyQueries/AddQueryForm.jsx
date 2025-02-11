@@ -47,15 +47,12 @@ const AddQueryForm = () => {
     return (
 
         <div className="hero bg-gradient-to-r from-indigo-50 via-white to-indigo-50 py-10">
-            <div className="hero-content w-full max-w-5xl mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8">
-                <h1 className="text-3xl font-extrabold text-center mb-5 text-indigo-600">
+            <div className="hero-content w-full max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8">
+                <h1 className="text-3xl font-extrabold text-center pb-6 text-blue-600">
                     Add Your Query
                 </h1>
-                <Link
-                    to="/myQueries"
-                    className="btn btn-outline flex items-center gap-2 mb-5 text-indigo-500 border-indigo-500 hover:bg-indigo-200 hover:text-black"
-                >
-                    <FaArrowLeft className="text-lg" />
+                <Link to="/myQueries" className="btn btn-outline flex items-center gap-2 mb-5">
+                    <FaArrowLeft className="text-lg"></FaArrowLeft>
                     Back to My Queries
                 </Link>
 
@@ -70,7 +67,7 @@ const AddQueryForm = () => {
                                 name="productName"
                                 type="text"
                                 placeholder="Enter product name"
-                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-indigo-200"
+                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-blue-300"
                                 required
                             />
                         </div>
@@ -84,7 +81,7 @@ const AddQueryForm = () => {
                                 name="productBrand"
                                 type="text"
                                 placeholder="Enter product brand"
-                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-indigo-200"
+                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-blue-300"
                                 required
                             />
                         </div>
@@ -98,7 +95,7 @@ const AddQueryForm = () => {
                                 name="productImageUrl"
                                 type="url"
                                 placeholder="Enter product image URL"
-                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-indigo-200"
+                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-blue-300"
                                 required
                             />
                         </div>
@@ -112,7 +109,7 @@ const AddQueryForm = () => {
                                 name="queryTitle"
                                 type="text"
                                 placeholder="Pick your query title"
-                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-indigo-200"
+                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-blue-300"
                                 required
                             />
                         </div>
@@ -126,7 +123,21 @@ const AddQueryForm = () => {
                                 name="boycottingReasonDetails"
                                 type="text"
                                 placeholder="Reason why you don't want this product"
-                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-indigo-200"
+                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-blue-300"
+                                required
+                            />
+                        </div>
+
+                        {/* Product Description */}
+                        <div className="form-control col-span-1 sm:col-span-2">
+                            <label className="label">
+                                <span className="label-text font-semibold text-gray-700">Product Description</span>
+                            </label>
+                            <input
+                                name="productDescription"
+                                type="text"
+                                placeholder="Enter product description"
+                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-blue-300"
                                 required
                             />
                         </div>
@@ -142,13 +153,13 @@ const AddQueryForm = () => {
                                 name="userImageUrl"
                                 type="url"
                                 placeholder="Enter user image URL"
-                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-indigo-200"
+                                className="input input-bordered w-full rounded-md text-sm bg-gray-50 focus:ring focus:ring-blue-300"
                             />
                         </div>
 
                         {/* Submit Button */}
                         <div className="form-control col-span-1 sm:col-span-2">
-                            <button className="btn btn-primary w-full rounded-md bg-indigo-600 text-white hover:bg-indigo-700 focus:ring focus:ring-indigo-300">
+                            <button className="btn btn-success w-full rounded-md border text-white">
                                 Submit Query
                             </button>
                         </div>

@@ -75,10 +75,10 @@ const RecommendationForm = () => {
     };
 
     return (
-        <div className="space-y-12 px-5 py-10 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="space-y-12 px-5 py-10 md:px-6 lg:px-8 w-11/12 mx-auto">
             {/* Query details Card */}
             <div className="flex flex-col lg:flex-row bg-base-100 shadow-xl border p-6 rounded-lg">
-                <figure className="flex justify-center items-center bg-gray-100 rounded-lg p-4 mb-4 lg:mb-0 lg:mr-6 lg:w-1/3">
+                <figure className="flex justify-center items-center bg-base-300 rounded-lg p-4 mb-4 lg:mb-0 lg:mr-6 lg:w-1/3">
                     <img
                         className="w-48 h-48 object-cover rounded-lg"
                         src={queryData?.productImageUrl}
@@ -88,7 +88,9 @@ const RecommendationForm = () => {
 
                 <div className="flex-1 pb-2">
                     <h2 className="text-2xl font-bold">{queryData?.productName}</h2>
-                    <p className="text-gray-500">Brand: {queryData?.productBrand}</p>
+                    <p className="text-gray-700">
+                        <span className="font-semibold">Brand:</span> {queryData?.productBrand}
+                    </p>
                     <p className="mt-2 text-gray-700">
                         <span className="font-semibold">Query:</span> {queryData?.queryTitle}
                     </p>
@@ -96,6 +98,14 @@ const RecommendationForm = () => {
                         <span className="font-semibold">Reason for Boycott:</span>{' '}
                         {queryData?.boycottingReasonDetails}
                     </p>
+                    <p className="mt-2 text-gray-700">
+                        <span className="font-semibold">Query Description:</span>{' '}
+                        {queryData?.productDescription}
+                    </p>
+                    {/* <p className="mt-2 text-gray-700">
+                        <span className="font-semibold">Date:</span>{' '}
+                        {queryData?.currentDateTime}
+                    </p> */}
                 </div>
 
                 <div className="flex flex-col items-center justify-center border-t lg:border-t-0 lg:border-l pt-4 lg:pt-0 lg:pl-6 space-y-4">
@@ -114,14 +124,14 @@ const RecommendationForm = () => {
             {/* Recommendation Form */}
             <div className="lg:grid grid-cols-12 gap-5">
                 <div className="lg:col-span-8">
-                    {/* <div className="flex justify-between items-center mb-6"> */}
-                    <h1 className="text-xl lg:text-3xl font-semibold text-gray-800 mb-5">Add Recommendation: <span className="text-primary">{queryData.productName}</span> </h1>
-                    <Link to="/queries" className="btn btn-outline items-center gap-2 mb-5 text-indigo-500 border-indigo-500 hover:bg-indigo-200 hover:text-black">
-                        <FaArrowLeft />
+
+                    <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-gray-800 mb-6">Add Recommendation: <span className="text-blue-600 font-bold">{queryData.productName}</span> </h1>
+                    <Link to="/queries" className="btn btn-outline items-center gap-2 mb-6">
+                        <FaArrowLeft></FaArrowLeft>
                         Back to Queries
                     </Link>
-                    {/* </div> */}
-                    <div className="bg-white rounded-sm shadow-md p-6 border mb-5">
+
+                    <div className="bg-white rounded-md shadow p-6 border mb-5">
                         <form onSubmit={handleAddRecommendation} className="space-y-5">
                             <div className="form-control">
                                 <label className="label font-medium">Recommendation Title</label>
@@ -164,20 +174,20 @@ const RecommendationForm = () => {
                                 />
                             </div>
                             <div className="form-control">
-                                <button className="btn btn-primary w-full rounded-sm bg-indigo-600 text-white hover:bg-indigo-700 focus:ring focus:ring-indigo-300">Submit Recommendation</button>
+                                <button className="btn btn-success w-full rounded-md border text-white">Submit Recommendation</button>
                             </div>
                         </form>
                     </div>
                 </div>
 
                 {/* Comments Section */}
-                <div className="space-y-4 border rounded-md p-3 col-span-4 mb-5">
+                <div className="space-y-4 border rounded-md shadow p-3 col-span-4 mb-5 ">
                     <h2 className="text-lg lg:text-xl font-semibold text-gray-800">All Recommendations:({comments.length})</h2>
                     <div className="divider"></div>
                     {comments.map((comment) => (
                         <div
                             key={comment._id}
-                            className="bg-gray-50 p-3 rounded-lg border shadow-md hover:shadow-lg transition-all duration-200 hover:bg-sky-200"
+                            className="bg-blue-100 p-3 rounded-md border shadow hover:shadow-lg transition-all duration-200 hover:bg-blue-300"
                         >
                             <div className="flex items-center space-x-2">
                                 <img
@@ -185,12 +195,12 @@ const RecommendationForm = () => {
                                     alt={comment?.recommendationProductName}
                                     className="w-20 h-20 object-cover rounded-full border"
                                 />
-                                <div>
-                                    <p className="text-gray-600">Reason: <span className="italic">"{comment?.recommendationReason}"</span> </p>
-                                    <p className="text-gray-600">Product Name: <span className="italic">"{comment?.recommendationProductName}"</span> </p>
+                                <div className="space-y-1">
+                                    <p className="text-gray-800">Reason: <span className="italic">"{comment?.recommendationReason}"</span> </p>
+                                    <p className="text-gray-800">Product Name: <span className="italic">"{comment?.recommendationProductName}"</span> </p>
                                     <p className="text-sm font-semibold text-gray-800">{comment?.userEmail} </p>
                                     <h4 className="text-sm font-semibold text-gray-800">{comment?.userName}</h4>
-                                    <p className="text-xs text-gray-500">{comment?.currentDateTime}</p>
+                                    <p className="text-xs text-gray-800">{comment?.currentDateTime}</p>
                                 </div>
                             </div>
                         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const RecentQueryCard = ({ query }) => {
-    const { _id, productImageUrl, productName, productBrand, queryTitle, currentDateTime } = query;
+    const { _id, productImageUrl, productName, productBrand, queryTitle, currentDateTime, productDescription } = query;
 
     // Function to format the date and time
     const formatDateTime = (isoDate) => {
@@ -31,12 +31,13 @@ const RecentQueryCard = ({ query }) => {
             </figure>
 
             <div className="text-center space-y-4">
-                <h2 className="text-lg font-bold text-gray-700">{productName}</h2>
-                <h3 className="text-md text-gray-500 font-medium">{productBrand}</h3>
-                <h3 className="text-md text-gray-500 font-medium">{queryTitle}</h3>
-                <h3 className="text-md text-gray-500 font-medium">
+                <h2 className="text-lg font-bold text-gray-700 truncate">{productName}</h2>
+                <h2 className="text-md text-gray-500 font-medium truncate">{productDescription}</h2>
+                {/* <h3 className="text-md text-gray-500 font-medium">{productBrand}</h3> */}
+                {/* <h3 className="text-md text-gray-500 font-medium">{queryTitle}</h3> */}
+                {/* <h3 className="text-md text-gray-500 font-medium">
                     {formatDateTime(currentDateTime)}
-                </h3>
+                </h3> */}
 
                 <div className="card-actions justify-center mt-4">
                     <Link to={`/recommendationForm/${query._id}`}><button className="btn btn-success px-4 py-2  text-white rounded-md shadow">

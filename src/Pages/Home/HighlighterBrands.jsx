@@ -30,10 +30,10 @@ const HighlighterBrands = () => {
             <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-center mb-6">
                 Unleash Innovation with our Diverse Brand Selection!
             </h2>
-            <div className="bg-[#111926] py-6">
+            <div className="bg-base-200 py-6">
                 <div className="w-11/12 mx-auto px-4 text-center">
 
-                    <h3 className="text-white font-semibold text-xl">Our All Brands</h3>
+                    <h3 className="font-semibold text-xl">Our All Brands</h3>
 
                     {/* all brands */}
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-5 mb-5">
@@ -52,7 +52,7 @@ const HighlighterBrands = () => {
                     </div>
 
                     {/* all services */}
-                    <h3 className="text-white font-semibold text-xl">Our All Services</h3>
+                    <h3 className="font-semibold text-xl">Our All Services</h3>
                     <div className="mt-5 grid grid-cols-2 md:grid-cols-4 gap-6 mb-5">
                         {features.map((feature, index) => (
                             <div
