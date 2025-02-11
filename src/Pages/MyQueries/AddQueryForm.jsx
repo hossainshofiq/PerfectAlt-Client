@@ -28,7 +28,7 @@ const AddQueryForm = () => {
             recommendationCount: 0,
         };
 
-        axios.post('http://localhost:5000/queries', queryData)
+        axios.post('https://product-recommendation-system-server-zeta.vercel.app/queries', queryData)
             .then(data => {
                 // console.log(data);
                 if (data.data.insertedId) {

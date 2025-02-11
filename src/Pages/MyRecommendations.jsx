@@ -10,7 +10,7 @@ const MyRecommendations = () => {
     const [reFetch, setReFetch] = useState(1);
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/myRecommendations?email=${user?.email}`, { withCredentials: true })
+        axios.get(`https://product-recommendation-system-server-zeta.vercel.app/myRecommendations?email=${user?.email}`, { withCredentials: true })
             .then(res => {
                 setRecommendation(res.data);
             });
@@ -27,14 +27,14 @@ const MyRecommendations = () => {
             confirmButtonText: 'Yes, delete it!',
         }).then(result => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/recommendations/${_id}`, {
+                fetch(`https://product-recommendation-system-server-zeta.vercel.app/recommendations/${_id}`, {
                     method: 'DELETE',
                 })
-                // axios.delete(`http://localhost:5000/recommendations/${_id}`)
+                // axios.delete(`https://product-recommendation-system-server-zeta.vercel.app/recommendations/${_id}`)
                     .then(res => res.json())
                     .then(data => {
                         if (data.deletedCount > 0) {
-                            axios.put(`http://localhost:5000/decrementByDelete?id=${queryId}`).then(res => {
+                            axios.put(`https://product-recommendation-system-server-zeta.vercel.app/decrementByDelete?id=${queryId}`).then(res => {
                                 setReFetch(reFetch + 1);
                                 Swal.fire({
                                     title: 'Deleted!',
