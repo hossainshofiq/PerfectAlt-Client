@@ -5,12 +5,14 @@ import HighlighterBrands from './HighlighterBrands';
 import ContactUs from './ContactUs';
 import Faq from './Faq';
 import Reviews from './Reviews';
+import FeaturedProducts from './FeaturedProducts';
 
 const Home = () => {
     return (
         <div className=''>
             <Slider></Slider>
             <RecentQueries></RecentQueries>
+            <FeaturedProducts></FeaturedProducts>
             <HighlighterBrands></HighlighterBrands>
             <Faq></Faq>
             <Reviews></Reviews>

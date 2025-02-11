@@ -24,9 +24,12 @@ const Queries = () => {
     };
 
     return (
-        <div className='max-w-7xl mx-auto my-10 px-4'>
-            <div className='flex flex-wrap justify-between gap-4'>
-                <h1 className='font-bold text-center text-3xl md:text-5xl'>All Queries</h1>
+        <div className='w-11/12 mx-auto my-10'>
+            <div className='flex flex-wrap justify-between items-center'>
+                <div className='flex flex-col flex-wrap gap-4'>
+                    <h1 className='font-bold text-center text-2xl md:text-3xl lg:text-5xl'>All Queries</h1>
+                    <button className='btn'>Sort By Count</button>
+                </div>
                 <div className="flex flex-col flex-wrap gap-4">
                     <label className="input input-bordered flex items-center gap-2 w-full md:w-auto">
                         <FaSearch></FaSearch>

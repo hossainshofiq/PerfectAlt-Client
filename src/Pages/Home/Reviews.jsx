@@ -51,12 +51,11 @@ const CustomerReviews = () => {
     return (
         <div className="bg-white pt-10">
             <div className="w-10/12 mx-auto text-center">
-
                 <div className="mb-8">
-                    <h2 className="text-3xl font-bold text-gray-800">What Our Users Say</h2>
+                    <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-gray-800">What Our Users Say</h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {(showAll ? reviews : reviews.slice(0, 4)).map((review, id) => (
                         <div key={id} className="bg-blue-300 shadow-lg rounded-lg p-6 text-left transition-transform transform hover:-translate-y-2" >
                             <p className="text-gray-700 italic">"{review.review}"</p>

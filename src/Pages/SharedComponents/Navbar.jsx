@@ -40,7 +40,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-[#27006f] text-white sticky top-0 z-50">
+        <div className="navbar bg-[#27006f] text-white sticky top-0 z-50 px-6 md:px-10 lg:px-20">
         {/* <div className="navbar bg-[#27006f] text-white fixed top-0 z-50 px-20"> */}
             <div className="navbar-start">
                 <div className="dropdown">
@@ -60,7 +60,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-blue-500 text-white rounded-box z-[50] mt-3 w-56 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-[#27006f] text-white rounded-box z-[50] mt-3 w-56 p-2 shadow">
                         {links}
                     </ul>
                 </div>

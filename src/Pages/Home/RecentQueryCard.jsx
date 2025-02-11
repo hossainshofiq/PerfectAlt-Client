@@ -19,7 +19,8 @@ const RecentQueryCard = ({ query }) => {
     };
 
     return (
-        <div className="card bg-white border rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 p-4 m-5">
+        <div className="card bg-white border rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 p-4">
+            {/* <div className="bg-white shadow-lg hover:shadow-xl rounded-lg p-6 transition-transform transform hover:-translate-y-1"> */}
 
             <figure className="flex justify-center">
                 <img
@@ -39,7 +40,7 @@ const RecentQueryCard = ({ query }) => {
 
                 <div className="card-actions justify-center mt-4">
                     <Link to={`/recommendationForm/${query._id}`}><button className="btn px-4 py-2 bg-green-500 text-white rounded-md shadow hover:bg-green-600 focus:ring ">
-                        Explore Now
+                        See More
                     </button></Link>
                 </div>
             </div>
