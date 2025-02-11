@@ -31,13 +31,13 @@ const Footer = () => {
                 <nav>
                     <h6 className="footer-title">Social</h6>
                     <div className="grid grid-flow-col gap-4">
-                        <a className='hover:cursor-pointer text-3xl'>
-                            <FaFacebook></FaFacebook>
+                        <a href='https://www.facebook.com/A.H.Shofiq/' target='blank' className='hover:cursor-pointer text-3xl'>
+                            <FaFacebook className='text-blue-600'></FaFacebook>
                         </a>
                         <a className='hover:cursor-pointer text-3xl'>
-                            <FaLinkedinIn></FaLinkedinIn>
+                            <FaLinkedinIn className='text-blue-600'></FaLinkedinIn>
                         </a>
-                        <a className='hover:cursor-pointer text-3xl'>
+                        <a href='https://github.com/hossainshofiq' target='blank' className='hover:cursor-pointer text-3xl'>
                             <FaGithub ></FaGithub>
                         </a>
                     </div>
@@ -53,3 +53,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// https://www.linkedin.com/in/md-ali-hossain-shofiq-35150b34b

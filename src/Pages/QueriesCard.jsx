@@ -41,7 +41,7 @@ const QueriesCard = ({ query }) => {
                         Recommendation Count: {query?.recommendationCount}
                     </h4>
                     <Link to={`/recommendationForm/${query._id}`}>
-                        <button className='btn bg-blue-600 hover:bg-blue-700 text-white'>
+                        <button className='btn bg-green-500 text-white rounded-md shadow hover:bg-green-600 focus:ring'>
                             Recommend
                         </button>
                     </Link>

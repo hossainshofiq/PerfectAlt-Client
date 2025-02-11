@@ -18,7 +18,7 @@ const Navbar = () => {
     }
 
     const links = <>
-        <div className='lg:flex gap-1'>
+        <div className='lg:flex items-center justify-center gap-1'>
             {
                 user ?
                     <>

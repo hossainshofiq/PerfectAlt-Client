@@ -50,7 +50,7 @@ const CustomerReviews = () => {
 
     return (
         <div className="bg-white pt-10">
-            <div className="w-10/12 mx-auto text-center">
+            <div className="w-11/12 mx-auto text-center">
                 <div className="mb-8">
                     <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-gray-800">What Our Users Say</h2>
                 </div>

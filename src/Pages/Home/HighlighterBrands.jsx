@@ -31,7 +31,7 @@ const HighlighterBrands = () => {
                 Unleash Innovation with our Diverse Brand Selection!
             </h2>
             <div className="bg-[#111926] py-6">
-                <div className="w-10/12 mx-auto px-4 text-center">
+                <div className="w-11/12 mx-auto px-4 text-center">
 
                     <h3 className="text-white font-semibold text-xl">Our All Brands</h3>
 
