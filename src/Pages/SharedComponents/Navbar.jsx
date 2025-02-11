@@ -52,7 +52,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-[#27006f] text-white sticky top-0 z-50 px-6 md:px-10 lg:px-20">
+        <div className="navbar bg-[#27006f] text-white sticky top-0 z-50 px-2 md:px-10 lg:px-20">
             {/* <div className="navbar bg-[#27006f] text-white fixed top-0 z-50 px-20"> */}
             <div className="navbar-start">
                 <div className="dropdown">
@@ -92,7 +92,7 @@ const Navbar = () => {
                     <input onChange={toggleTheme} type="checkbox" className="theme-controller" value="synthwave" />
 
                     <svg
-                        className="swap-off h-10 w-10 fill-current"
+                        className="swap-off h-7 w-7 md:w-10 md:h-10 fill-current"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24">
                         <path
@@ -100,7 +100,7 @@ const Navbar = () => {
                     </svg>
 
                     <svg
-                        className="swap-on h-10 w-10 fill-current"
+                        className="swap-on h-7 w-7 md:w-10 md:h-10 fill-current"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24">
                         <path
@@ -119,10 +119,10 @@ const Navbar = () => {
                                     alt="User Avatar" />
                                 <Tooltip id='my-tooltip'></Tooltip>
                             </div>
-                            <button onClick={handleSignOut} className='btn btn-error'>Logout</button>
+                            <button onClick={handleSignOut} className='btn btn-error text-black'>Logout</button>
                         </div> :
                         <div>
-                            <Link className="btn btn-success text-white" to='/login'>Login</Link>
+                            <Link className="btn btn-success text-white rounded-md shadow" to='/login'>Login</Link>
                         </div>
                 }
 

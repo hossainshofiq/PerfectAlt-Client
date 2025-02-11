@@ -34,7 +34,7 @@ const GoogleSignIn = () => {
     }
     return (
         <div>
-            <button onClick={handleGoogleSignIn} className='btn w-full btn-success text-white'>
+            <button onClick={handleGoogleSignIn} className='btn btn-success text-white w-full rounded-md shadow'>
                 <FaGoogle></FaGoogle> Login With Google
             </button>
         </div>

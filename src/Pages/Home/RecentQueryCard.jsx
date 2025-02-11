@@ -39,7 +39,7 @@ const RecentQueryCard = ({ query }) => {
                 </h3>
 
                 <div className="card-actions justify-center mt-4">
-                    <Link to={`/recommendationForm/${query._id}`}><button className="btn px-4 py-2 bg-green-500 text-white rounded-md shadow hover:bg-green-600 focus:ring ">
+                    <Link to={`/recommendationForm/${query._id}`}><button className="btn btn-success px-4 py-2  text-white rounded-md shadow">
                         See More
                     </button></Link>
                 </div>

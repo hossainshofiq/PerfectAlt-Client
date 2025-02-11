@@ -51,18 +51,18 @@ const MyQueryCard = ({ query, queries, setQueries }) => {
                 <p className="text-gray-900 font-semibold my-3">Boycott Reason: <span className='text-gray-600 '>{query.boycottingReasonDetails}</span></p>
                 <div className="card-actions flex justify-center space-x-3 mt-4 font-semibold">
                     <Link to={`/myQueries/queryDetails/${_id}`}>
-                        <button className="px-4 py-2  bg-blue-500 text-white rounded-md shadow hover:bg-blue-600">
+                        <button className="btn bg-blue-500 hover:bg-blue-600 text-white rounded-md shadow">
                             View Details
                         </button>
                     </Link>
                     <Link to={`/myQueries/queryUpdate/${_id}`}>
-                        <button className="px-4 py-2 bg-green-500 text-white rounded-md shadow hover:bg-green-600">
+                        <button className="btn btn-success text-white rounded-md shadow">
                             Update
                         </button>
                     </Link>
                     <button
                         onClick={() => handleQueryDelete(_id)}
-                        className="px-4 py-2 bg-red-500 text-white rounded-md shadow hover:bg-red-600"
+                        className="btn btn-error text-black rounded-md shadow"
                     >
                         Delete
                     </button>

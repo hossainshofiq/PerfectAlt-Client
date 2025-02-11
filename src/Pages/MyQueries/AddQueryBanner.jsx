@@ -30,7 +30,7 @@ const AddQueryBanner = () => {
                         // transition={{ duration: 2, delay: 1, ease: easeOut, repeat: Infinity }}
                         className="text-5xl font-bold">Add Your
                         <motion.span
-                            animate={{ color: ['#ffffff', '#0651b7', '#06e32e'] }}
+                            animate={{ color: ['#ff5861', '#00a96e', '#2563eb'] }}
                             transition={{ duration: 1.75, repeat: Infinity }}
                         >Queries</motion.span></motion.h1>
                     <p className="py-6">
@@ -40,7 +40,7 @@ const AddQueryBanner = () => {
                         <motion.button
                             whileHover={{ scale: 1.20 }}
                             whileTap={{ scale: 0.75 }}
-                            className="btn text-white bg-[#5a00f0] border-none hover:bg-white hover:text-[#5a00f0]">Add Queries</motion.button>
+                            className="btn btn-success rounded-md shadow text-white">Add Queries</motion.button>
                     </Link>
                 </div>
             </div>

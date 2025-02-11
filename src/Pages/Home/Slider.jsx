@@ -31,7 +31,7 @@ const Slider = () => {
                             The Xiaomi Redmi Note 13 Pro+ is a mid-range smartphone featuring a 6.7-inch AMOLED display with 120Hz refresh rate, 200MP main camera, and 5000mAh battery with 120W fast charging.
                         </p>
                         <Link to='/queries'>
-                            <button className="btn bg-green-500 text-white rounded-md shadow hover:bg-green-600 focus:ring">Explore our Product Queries</button>
+                            <button className="btn btn-success text-white rounded-md shadow">Explore our Product Queries</button>
                         </Link>
                     </div>
                 </SwiperSlide>
@@ -47,7 +47,7 @@ const Slider = () => {
 
                         </p>
                         <Link to='/queries'>
-                            <button className="btn bg-green-500 text-white rounded-md shadow hover:bg-green-600 focus:ring">Explore our Product Queries</button>
+                            <button className="btn btn-success text-white rounded-md shadow">Explore our Product Queries</button>
                         </Link>
                     </div>
                 </SwiperSlide>
@@ -62,7 +62,7 @@ const Slider = () => {
                             A watch is a portable timepiece designed to be worn on the wrist or carried in a pocket,keep track of time throughout their daily activities.
                         </p>
                         <Link to='/queries'>
-                            <button className="btn bg-green-500 text-white rounded-md shadow hover:bg-green-600 focus:ring">Explore our Product Queries</button>
+                            <button className="btn btn-success text-white rounded-md shadow">Explore our Product Queries</button>
                         </Link>
                     </div>
                 </SwiperSlide>
@@ -77,7 +77,7 @@ const Slider = () => {
                             The iPhone 16 series introduces new features such as the Camera Control button and the Action button, enhancing user experience and functionality.
                         </p>
                         <Link to='/queries'>
-                            <button className="btn bg-green-500 text-white rounded-md shadow hover:bg-green-600 focus:ring">Explore our Product Queries</button>
+                            <button className="btn btn-success text-white rounded-md shadow">Explore our Product Queries</button>
                         </Link>
                     </div>
                 </SwiperSlide>

@@ -131,7 +131,7 @@ const Register = () => {
                             <input name='photo' type="url" placeholder="enter your photo url" className="input input-bordered rounded-md" required />
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn rounded-md btn-primary">Register</button>
+                            <button className="btn btn-success text-white rounded-md shadow">Register</button>
                         </div>
 
                         <p className='text-center mt-5'>Already Registered? <Link className='underline font-bold text-blue-700' to='/login'>Login!</Link></p>

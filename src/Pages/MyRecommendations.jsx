@@ -108,8 +108,8 @@ const MyRecommendations = () => {
                                     <td className="px-4 py-3 text-gray-800">{recommend.recommendationReason}</td>
                                     <td className="px-4 py-3 text-gray-600">{recommend.currentDateTime}</td>
                                     <td className="flex gap-2 px-4 py-3">
-                                        <button onClick={() => handleDeleteRecommendation(recommend._id, recommend.queryId)} className="flex items-center gap-2 px-4 py-2 text-white bg-red-500 hover:bg-red-600 rounded-md">
-                                            <MdDeleteForever />
+                                        <button onClick={() => handleDeleteRecommendation(recommend._id, recommend.queryId)} className="flex items-center gap-2 btn btn-error text-black rounded-md shadow">
+                                            <MdDeleteForever className='text-xl'></MdDeleteForever>
                                             <span>Delete</span>
                                         </button>
                                     </td>

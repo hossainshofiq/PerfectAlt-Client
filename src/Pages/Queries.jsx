@@ -38,8 +38,6 @@ const Queries = () => {
             setQuery(sortedData);
         }
         setBool(!bool);
-
-        // console.log(sortedData);
     }
 
     const handleGridChange = (columns) => {
@@ -48,12 +46,12 @@ const Queries = () => {
 
     return (
         <div className='w-11/12 mx-auto my-10'>
-            <div className='flex flex-wrap justify-between items-center'>
-                <div className='flex flex-col flex-wrap gap-4'>
-                    <h1 className='font-bold text-center text-2xl md:text-3xl lg:text-5xl'>All Queries</h1>
+            <div className='flex flex-wrap justify-between items-center gap-6'>
+                <div className='flex flex-col flex-wrap gap-7'>
+                    <h1 className='font-bold text-left text-2xl md:text-3xl lg:text-5xl'>All Queries</h1>
                     <button
                         onClick={handleSortByCount}
-                        className='btn bg-green-500 text-white rounded-md shadow hover:bg-green-600'>
+                        className='btn btn-success text-white rounded-md shadow'>
                         Sort By Recommended Count
                         {flag ? '' : bool ? <FaArrowUp></FaArrowUp> : <FaArrowDown></FaArrowDown>}
                     </button>
@@ -68,21 +66,21 @@ const Queries = () => {
                     <div className="flex gap-2">
                         <button
                             onClick={() => handleGridChange(1)}
-                            className={`btn ${gridColumns === 1 ? 'bg-green-500 text-white rounded-md shadow hover:bg-green-600' : 'bg-gray-200'} hidden md:block`}
+                            className={`btn ${gridColumns === 1 ? 'btn-success text-white rounded-md shadow' : 'btn-outline rounded-md shadow'} hidden md:block`}
                         >1 Column</button>
                         <button
                             onClick={() => handleGridChange(2)}
-                            className={`btn ${gridColumns === 2 ? 'bg-green-500 text-white rounded-md shadow hover:bg-green-600' : 'bg-gray-200'} hidden sm:block `}
+                            className={`btn ${gridColumns === 2 ? 'btn-success text-white rounded-md shadow' : 'btn-outline rounded-md shadow'} hidden sm:block `}
                         >2 Columns</button>
                         <button
                             onClick={() => handleGridChange(3)}
-                            className={`btn ${gridColumns === 3 ? 'bg-green-500 text-white rounded-md shadow hover:bg-green-600' : 'bg-gray-200'} hidden lg:block`}
+                            className={`btn ${gridColumns === 3 ? 'btn-success text-white rounded-md shadow' : 'btn-outline rounded-md shadow'} hidden lg:block`}
                         >3 Columns</button>
                     </div>
                 </div>
             </div>
 
-            <div className={`grid gap-6 mt-10`}
+            <div className={`grid gap-6 pt-8`}
                 style={{ gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))` }}
             >
                 {filteredQueries?.length > 0 ?

@@ -69,7 +69,7 @@ const CustomerReviews = () => {
                     ))}
                 </div>
 
-                <button onClick={() => setShowAll(!showAll)} className="mt-8 px-6 py-3 bg-green-500 text-white text-lg font-semibold rounded hover:bg-green-600 transition" >
+                <button onClick={() => setShowAll(!showAll)} className="btn btn-success mt-8 px-6 py-3 text-white rounded-md" >
                     {showAll ? "Show Less" : "Read More Reviews"}
                 </button>
             </div>

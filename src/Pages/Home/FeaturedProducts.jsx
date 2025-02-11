@@ -58,7 +58,7 @@ const FeaturedProducts = () => {
 
                     <button
                         onClick={() => setShowAll(!showAll)}
-                        className="mt-8 px-6 py-3 bg-green-500 text-white text-lg font-semibold rounded hover:bg-green-600 transition"
+                        className="btn btn-success mt-8 px-6 py-3 text-white rounded"
                     >
                         {showAll ? "Show Less" : "View More"}
                     </button>
