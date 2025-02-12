@@ -8,7 +8,7 @@ const ErrorPage = () => {
         <div className="flex flex-col justify-center items-center min-h-screen space-y-3">
             <img className="w-[400px] md:w-[500px] h-auto" src={errorImage} alt="Error" />
             <Link to="/">
-                <button className="btn btn-info text-xl text-white flex items-center gap-2">
+                <button className="btn bg-primary rounded-md text-xl text-white flex items-center gap-2">
                     <FaArrowAltCircleLeft></FaArrowAltCircleLeft> Back to Home
                 </button>
             </Link>

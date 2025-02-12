@@ -50,10 +50,9 @@ const Navbar = () => {
             }
         </div>
     </>
-// bg-[#27006f]
+    // bg-[#27006f]
     return (
-        <div className="navbar bg-[#27006f] text-white sticky top-0 z-50 md:px-10 lg:px-20">
-            {/* <div className="navbar bg-[#27006f] text-white fixed top-0 z-50 px-20"> */}
+        <div className="navbar bg-primary text-white sticky top-0 z-50 md:px-10 lg:px-20">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -72,12 +71,12 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-[#27006f] text-white rounded-box z-[50] mt-3 w-56 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-primary rounded-box z-[50] mt-3 w-56 p-2 shadow">
                         {links}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost text-xl">
-                    <img className='w-10' src={websiteLogo} alt="" />
+                <Link to='/' className="btn text-md md:text-xl">
+                    <img className='w-7 md:w-10' src={websiteLogo} alt="" />
                     PerfectAlt
                 </Link>
             </div>

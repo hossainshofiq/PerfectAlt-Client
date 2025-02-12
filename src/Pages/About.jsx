@@ -7,7 +7,7 @@ const About = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                 <div className="flex flex-col gap-2">
                     <h1 className="relative text-2xl md:text-3xl lg:text-4xl font-bold">About</h1>
-                    <p className=" font-semibold">PerfectAlt / About</p>
+                    <p className=" font-semibold bg-gray-400 px-3 py-1 rounded-md text-black">PerfectAlt / About</p>
                 </div>
             </div>
 

@@ -51,7 +51,6 @@ const Queries = () => {
                 <div className="flex flex-col gap-2">
                     <h1 className="relative text-2xl md:text-3xl lg:text-4xl font-bold">Queries</h1>
                     <p className=" font-semibold text-black">PerfectAlt / Queries</p>
-
                 </div>
             </div>
             <div className='w-11/12 mx-auto py-10'>

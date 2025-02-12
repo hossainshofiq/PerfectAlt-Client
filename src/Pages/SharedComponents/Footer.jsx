@@ -37,7 +37,7 @@ const Footer = () => {
                         <a className='hover:cursor-pointer text-3xl'>
                             <FaLinkedinIn className='text-blue-600'></FaLinkedinIn>
                         </a>
-                        <a href='https://github.com/hossainshofiq' target='blank' className='hover:cursor-pointer text-3xl'>
+                        <a target='blank' className='hover:cursor-pointer text-3xl'>
                             <FaGithub ></FaGithub>
                         </a>
                     </div>
@@ -55,3 +55,5 @@ const Footer = () => {
 export default Footer;
 
 // https://www.linkedin.com/in/md-ali-hossain-shofiq-35150b34b
+
+//https://github.com/hossainshofiq

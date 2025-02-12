@@ -8,7 +8,7 @@ import image2 from '../../assets/addQueryBannerImage/addQueryIMG2.jpg'
 
 const AddQueryBanner = () => {
     return (
-        <div className="hero bg-[#27006f] min-h-96">
+        <div className="hero bg-blue-500 min-h-96">
             <div className="hero-content flex-col lg:flex-row">
                 <div className='flex-1'>
 
