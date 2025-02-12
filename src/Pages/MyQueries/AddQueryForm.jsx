@@ -46,9 +46,9 @@ const AddQueryForm = () => {
 
     return (
 
-        <div className="hero bg-gradient-to-r from-indigo-50 via-white to-indigo-50 py-10">
+        <div className="hero bg-gradient-to-r from-blue-200 via-white to-blue-200 py-10">
             <div className="hero-content w-full max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8">
-                <h1 className="text-3xl font-extrabold text-center pb-6 text-blue-600">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-blue-600">
                     Add Your Query
                 </h1>
                 <Link to="/myQueries" className="btn btn-outline flex items-center gap-2 mb-5">
@@ -159,7 +159,7 @@ const AddQueryForm = () => {
 
                         {/* Submit Button */}
                         <div className="form-control col-span-1 sm:col-span-2">
-                            <button className="btn btn-success w-full rounded-md border text-white">
+                            <button className="btn btn-success w-full rounded-md shadow border text-white">
                                 Submit Query
                             </button>
                         </div>

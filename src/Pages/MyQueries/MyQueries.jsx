@@ -22,10 +22,10 @@ const MyQueries = () => {
         <div className="flex flex-col text-center">
             <AddQueryBanner></AddQueryBanner>
             <div className="flex-grow flex flex-col items-center mx-5">
-                <h1 className="font-bold text-5xl my-10">My Queries</h1>
+                <h1 className="font-bold text-2xl md:tex-3xl lg:text-4xl my-10">My Queries</h1>
                 {
                     queries.length > 0 ? (
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full max-w-7xl mx-auto">
+                        <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                             {queries.map(query => (
                                 <MyQueryCard
                                     key={query._id}

@@ -9,14 +9,14 @@ import FeaturedProducts from './FeaturedProducts';
 
 const Home = () => {
     return (
-        <div className=''>
+        <div className='bg-base-100'>
             <Slider></Slider>
             <RecentQueries></RecentQueries>
             <FeaturedProducts></FeaturedProducts>
             <HighlighterBrands></HighlighterBrands>
             <Faq></Faq>
             <Reviews></Reviews>
-            <ContactUs></ContactUs>
+            {/* <ContactUs></ContactUs> */}
         </div>
     );
 };

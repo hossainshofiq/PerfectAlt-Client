@@ -125,7 +125,7 @@ const RecommendationForm = () => {
             <div className="lg:grid grid-cols-12 gap-5">
                 <div className="lg:col-span-8">
 
-                    <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-gray-800 mb-6">Add Recommendation: <span className="text-blue-600 font-bold">{queryData.productName}</span> </h1>
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-6">Add Recommendation: <span className="text-blue-600 font-bold">{queryData.productName}</span> </h1>
                     <Link to="/queries" className="btn btn-outline items-center gap-2 mb-6">
                         <FaArrowLeft></FaArrowLeft>
                         Back to Queries

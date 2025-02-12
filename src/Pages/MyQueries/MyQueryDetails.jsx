@@ -7,20 +7,20 @@ const MyQueryDetails = () => {
     const query = useLoaderData();
 
     return (
-        <div className="max-w-5xl mx-auto my-10">
+        <div className="max-w-7xl mx-auto py-10">
             <div className='mx-5'>
-                <h1 className="font-semibold text-3xl mb-5">
+                <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl mb-6">
                     Query Details for: <span className="text-primary">{query?.productName}</span>
                 </h1>
-                <Link to="/myQueries" className="btn btn-outline items-center gap-2 mb-5 text-indigo-500 border-indigo-500 hover:bg-indigo-200 hover:text-black">
+                <Link to="/myQueries" className="btn btn-outline items-center gap-2 mb-6">
                     <FaArrowLeft className="text-lg" />
                     Back to My Queries
                 </Link>
             </div>
 
             {/* Card Section */}
-            <div className="card lg:card-side bg-base-100 shadow-xl border p-6 mb-10 rounded-lg mx-5">
-                <figure className="flex justify-center items-center bg-gray-100 rounded-lg p-4">
+            <div className="card lg:card-side bg-base-100 shadow-xl border p-6 mb-10 rounded-md mx-5">
+                <figure className="flex justify-center items-center bg-gray-100 rounded-md p-4">
                     <img
                         className="w-52 h-52 object-cover rounded-lg"
                         src={query?.productImageUrl}
@@ -30,15 +30,19 @@ const MyQueryDetails = () => {
 
                 <div className="card-body flex-1">
                     <h2 className="card-title text-2xl font-bold">{query?.productName}</h2>
-                    <p className="mt-2 text-gray-700">
+                    <p className="text-gray-700">
                         <span className="font-semibold">Brand:</span> {query?.productBrand}
                     </p>
-                    <p className="mt-2 text-gray-700">
+                    <p className="text-gray-700">
                         <span className="font-semibold">Query:</span> {query?.queryTitle}
                     </p>
-                    <p className="mt-2 text-gray-700">
+                    <p className="text-gray-700">
                         <span className="font-semibold">Reason for Boycott:</span>{' '}
                         {query?.boycottingReasonDetails}
+                    </p>
+                    <p className="text-gray-700">
+                        <span className="font-semibold">Product Description:</span>{' '}
+                        {query?.productDescription}
                     </p>
                 </div>
 

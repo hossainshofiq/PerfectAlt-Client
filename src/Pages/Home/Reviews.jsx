@@ -49,10 +49,10 @@ const CustomerReviews = () => {
     const [showAll, setShowAll] = useState(false);
 
     return (
-        <div className="bg-white pt-10">
+        <div className="bg-white py-10">
             <div className="w-11/12 mx-auto text-center">
                 <div className="mb-8">
-                    <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-gray-800">What Our Users Say</h2>
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">What Our Users Say</h2>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

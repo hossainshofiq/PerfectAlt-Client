@@ -30,7 +30,7 @@ const Navbar = () => {
     };
 
     const links = <>
-        <div className='lg:flex items-center justify-center gap-1'>
+        <div className='lg:flex items-center justify-center font-semibold gap-1'>
             {
                 user ?
                     <>
@@ -50,9 +50,9 @@ const Navbar = () => {
             }
         </div>
     </>
-
+// bg-[#27006f]
     return (
-        <div className="navbar bg-[#27006f] text-white sticky top-0 z-50 px-2 md:px-10 lg:px-20">
+        <div className="navbar bg-[#27006f] text-white sticky top-0 z-50 md:px-10 lg:px-20">
             {/* <div className="navbar bg-[#27006f] text-white fixed top-0 z-50 px-20"> */}
             <div className="navbar-start">
                 <div className="dropdown">

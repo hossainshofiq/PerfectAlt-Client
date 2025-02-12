@@ -16,7 +16,7 @@ const RecommendationsForMe = () => {
 
     return (
         <div className="w-11/12 mx-auto text-center my-10">
-            <h1 className="font-bold text-5xl pb-6 text-gray-800">
+            <h1 className="font-bold text-xl md:text-3xl lg:text-4xl pb-6 text-gray-800">
                 Recommendations For Me: {recommendationsForMe.length}
             </h1>
 

@@ -56,11 +56,11 @@ const FeaturedProducts = () => {
 
     return (
         <div className="pt-10">
-            <div className="bg-base-300 py-8">
+            <div className="bg-base-200 py-8">
                 <div className="w-11/12 mx-auto text-center">
                     <div className="pb-6">
                         <p className="text-green-500 uppercase text-sm font-bold">Featured Queries</p>
-                        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-gray-800">Popular Product Recommendations</h2>
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Popular Product Recommendations</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

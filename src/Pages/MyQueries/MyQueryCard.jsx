@@ -36,23 +36,28 @@ const MyQueryCard = ({ query, queries, setQueries }) => {
         })
     }
     return (
-        <div className="card bg-white shadow-lg rounded-lg w-full border mx-auto transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+        <div className="card bg-white shadow-lg rounded-md w-full border mx-auto transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
             <figure className="px-5 pt-5">
                 <img
                     src={query.productImageUrl}
                     alt={query.productName}
-                    className="rounded-xl w-52 h-40 object-contain"
+                    className="rounded-xl w-48 h-48 object-cover"
                 />
             </figure>
             <div className="card-body text-center p-5">
                 <h2 className="text-2xl font-bold text-gray-800">{query.productName}</h2>
-                <h3 className="text-lg font-semibold text-gray-900">Brand: <span className='text-lg font-semibold text-gray-500'>{query.productBrand}</span></h3>
-                <p className="text-gray-900 font-semibold my-3">Query Title: <span className='text-gray-600 '>{query.queryTitle}</span></p>
-                <p className="text-gray-900 font-semibold my-3">Boycott Reason: <span className='text-gray-600 '>{query.boycottingReasonDetails}</span></p>
-                <div className="card-actions flex justify-center space-x-3 mt-4 font-semibold">
+
+                {/* <h3 className="text-lg font-semibold text-gray-900">Brand: <span className='text-lg font-semibold text-gray-500'>{query.productBrand}</span></h3> */}
+
+                {/* <p className="text-gray-900 font-semibold my-3 truncate">Query Title: <span className='text-gray-600 '>{query.queryTitle}</span></p> */}
+
+                {/* <p className="text-gray-900 font-semibold my-3 truncate">Boycott Reason: <span className='text-gray-600 '>{query.boycottingReasonDetails}</span></p> */}
+
+                <p className="text-gray-900 font-semibold my-3 truncate">Description: <span className='text-gray-600 '>{query.productDescription}</span></p>
+                <div className="card-actions flex justify-center space-x-3 mt-2 font-semibold">
                     <Link to={`/myQueries/queryDetails/${_id}`}>
                         <button className="btn bg-blue-500 hover:bg-blue-600 text-white rounded-md shadow">
-                            View Details
+                            Details
                         </button>
                     </Link>
                     <Link to={`/myQueries/queryUpdate/${_id}`}>

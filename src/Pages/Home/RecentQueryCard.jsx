@@ -32,7 +32,7 @@ const RecentQueryCard = ({ query }) => {
 
             <div className="text-center space-y-4">
                 <h2 className="text-lg font-bold text-gray-700 truncate">{productName}</h2>
-                <h2 className="text-md text-gray-500 font-medium truncate">{productDescription}</h2>
+                <h2 className="text-md text-gray-900 font-medium truncate">Description: <span className='text-gray-500'> {productDescription}</span></h2>
                 {/* <h3 className="text-md text-gray-500 font-medium">{productBrand}</h3> */}
                 {/* <h3 className="text-md text-gray-500 font-medium">{queryTitle}</h3> */}
                 {/* <h3 className="text-md text-gray-500 font-medium">

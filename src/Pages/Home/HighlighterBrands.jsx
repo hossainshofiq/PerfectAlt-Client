@@ -26,11 +26,11 @@ const HighlighterBrands = () => {
     ];
 
     return (
-        <div className='mt-10'>
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-center mb-6">
+        <div className='bg-base-200 mt-10'>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center pt-8">
                 Unleash Innovation with our Diverse Brand Selection!
             </h2>
-            <div className="bg-base-200 py-6">
+            <div className="py-6">
                 <div className="w-11/12 mx-auto px-4 text-center">
 
                     <h3 className="font-semibold text-xl">Our All Brands</h3>

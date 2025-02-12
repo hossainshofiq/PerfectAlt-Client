@@ -50,7 +50,7 @@ const MyRecommendations = () => {
 
     return (
         <div className="max-w-7xl mx-auto text-center my-10">
-            <h1 className="font-bold text-5xl mb-5 text-gray-800">
+            <h1 className="font-bold text-xl md:text-3xl lg:text-4xl mb-6 text-gray-800">
                 My Recommendations: {recommendation.length}{' '}
             </h1>
 

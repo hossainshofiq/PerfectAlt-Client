@@ -10,7 +10,7 @@ const MyQueryUpdate = () => {
     const query = useLoaderData();
     const navigate = useNavigate();
 
-    const { _id, productName, productBrand, productImageUrl, queryTitle, boycottingReasonDetails } = query;
+    const { _id, productName, productBrand, productImageUrl, queryTitle, boycottingReasonDetails, productDescription } = query;
 
     const handleUpdateQuery = (e) => {
         e.preventDefault();
@@ -35,12 +35,12 @@ const MyQueryUpdate = () => {
     return (
         <div className="max-w-screen-xl mx-auto px-4 py-8">
             <div className='flex flex-col items-center'>
-                <h1 className="text-3xl font-bold mb-6">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
                     Update Query: <span className="text-primary">{productName}</span>
                 </h1>
 
                 <Link to="/myQueries">
-                    <button className="btn btn-outline flex items-center gap-2 mb-6 text-indigo-500 border-indigo-500 hover:bg-indigo-200 hover:text-black">
+                    <button className="btn btn-outline flex items-center gap-2 mb-6">
                         <FaArrowLeft /> Back to My Queries
                     </button>
                 </Link>
@@ -79,12 +79,27 @@ const MyQueryUpdate = () => {
                     </div>
 
                     {/* Product Image-URL */}
-                    <div className="form-control col-span-1 md:col-span-2">
+                    <div className="form-control col-span-1">
                         <label className="label">
                             <span className="label-text">Product Image-URL</span>
                         </label>
                         <input
                             defaultValue={productImageUrl}
+                            name="productImageUrl"
+                            type="url"
+                            placeholder="Enter product image URL"
+                            className="input input-bordered w-full"
+                            required
+                        />
+                    </div>
+
+                    {/* Product Image-URL */}
+                    <div className="form-control col-span-1">
+                        <label className="label">
+                            <span className="label-text">Product Description</span>
+                        </label>
+                        <input
+                            defaultValue={productDescription}
                             name="productImageUrl"
                             type="url"
                             placeholder="Enter product image URL"
@@ -139,7 +154,7 @@ const MyQueryUpdate = () => {
                     </div>
 
                     <div className="form-control col-span-1 md:col-span-2">
-                        <button className="btn btn-primary w-full bg-indigo-600 text-white hover:bg-indigo-700">
+                        <button className="btn btn-success w-full text-white rounded-md shadow">
                             Update Query
                         </button>
                     </div>

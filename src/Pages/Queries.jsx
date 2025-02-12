@@ -45,11 +45,11 @@ const Queries = () => {
     };
 
     return (
-        <div className='bg-base-100'>
+        <div className=''>
             <div className='w-11/12 mx-auto py-10'>
                 <div className='flex flex-wrap justify-between items-center gap-6'>
                     <div className='flex flex-col flex-wrap gap-7'>
-                        <h1 className='font-bold text-left text-2xl md:text-3xl lg:text-5xl'>All Queries</h1>
+                        <h1 className='font-bold text-left text-2xl md:text-3xl lg:text-4xl'>All Queries</h1>
                         <button
                             onClick={handleSortByCount}
                             className='btn btn-success text-white rounded-md shadow'>
