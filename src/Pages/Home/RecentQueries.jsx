@@ -1,17 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import RecentQueryCard from './RecentQueryCard';
 import axios from 'axios';
+import Spinner from '../Spinner';
 
 const RecentQueries = () => {
 
     const [recentQueries, setRecentQueries] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         axios.get('https://product-recommendation-system-server-zeta.vercel.app/recentQueries')
             .then(res => {
                 setRecentQueries(res.data);
+                setLoading(false);
             })
     }, [])
+
+    if(loading){
+        return <Spinner></Spinner>
+    }
 
     return (
         <div className='bg-base-200'>

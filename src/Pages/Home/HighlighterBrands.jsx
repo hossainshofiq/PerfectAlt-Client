@@ -33,7 +33,7 @@ const HighlighterBrands = () => {
             <div className="py-6">
                 <div className="w-11/12 mx-auto px-4 text-center">
 
-                    <h3 className="font-semibold text-xl">Our All Brands</h3>
+                    <h3 className="text-xl text-green-500 uppercase font-bold">Our All Brands</h3>
 
                     {/* all brands */}
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-5 mb-5">
@@ -52,7 +52,7 @@ const HighlighterBrands = () => {
                     </div>
 
                     {/* all services */}
-                    <h3 className="font-semibold text-xl">Our All Services</h3>
+                    <h3 className="text-xl text-green-500 uppercase font-bold">Our All Services</h3>
                     <div className="mt-5 grid grid-cols-2 md:grid-cols-4 gap-6 mb-5">
                         {features.map((feature, index) => (
                             <div

@@ -46,6 +46,14 @@ const Queries = () => {
 
     return (
         <div className=''>
+            <div className="relative w-full h-44 flex items-center justify-center text-center text-black bg-blue-400">
+                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                <div className="flex flex-col gap-2">
+                    <h1 className="relative text-2xl md:text-3xl lg:text-4xl font-bold">Queries</h1>
+                    <p className=" font-semibold text-black">PerfectAlt / Queries</p>
+
+                </div>
+            </div>
             <div className='w-11/12 mx-auto py-10'>
                 <div className='flex flex-wrap justify-between items-center gap-6'>
                     <div className='flex flex-col flex-wrap gap-7'>

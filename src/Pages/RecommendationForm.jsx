@@ -88,17 +88,17 @@ const RecommendationForm = () => {
 
                 <div className="flex-1 pb-2">
                     <h2 className="text-2xl font-bold">{queryData?.productName}</h2>
-                    <p className="text-gray-700">
+                    <p className="">
                         <span className="font-semibold">Brand:</span> {queryData?.productBrand}
                     </p>
-                    <p className="mt-2 text-gray-700">
+                    <p className="mt-2">
                         <span className="font-semibold">Query:</span> {queryData?.queryTitle}
                     </p>
-                    <p className="mt-2 text-gray-700">
+                    <p className="mt-2">
                         <span className="font-semibold">Reason for Boycott:</span>{' '}
                         {queryData?.boycottingReasonDetails}
                     </p>
-                    <p className="mt-2 text-gray-700">
+                    <p className="mt-2">
                         <span className="font-semibold">Query Description:</span>{' '}
                         {queryData?.productDescription}
                     </p>
@@ -116,7 +116,7 @@ const RecommendationForm = () => {
                     />
                     <div className="text-center">
                         <p className="font-semibold">{queryData?.userEmail}</p>
-                        <p className="text-sm text-gray-500">{queryData?.userName}</p>
+                        <p className="text-sm">{queryData?.userName}</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@ const RecommendationForm = () => {
             <div className="lg:grid grid-cols-12 gap-5">
                 <div className="lg:col-span-8">
 
-                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-6">Add Recommendation: <span className="text-blue-600 font-bold">{queryData.productName}</span> </h1>
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">Add Recommendation: <span className="text-blue-600 font-bold">{queryData.productName}</span> </h1>
                     <Link to="/queries" className="btn btn-outline items-center gap-2 mb-6">
                         <FaArrowLeft></FaArrowLeft>
                         Back to Queries
@@ -182,7 +182,7 @@ const RecommendationForm = () => {
 
                 {/* Comments Section */}
                 <div className="space-y-4 border rounded-md shadow p-3 col-span-4 mb-5 ">
-                    <h2 className="text-lg lg:text-xl font-semibold text-gray-800">All Recommendations:({comments.length})</h2>
+                    <h2 className="text-lg lg:text-xl font-semibold">All Recommendations:({comments.length})</h2>
                     <div className="divider"></div>
                     {comments.map((comment) => (
                         <div

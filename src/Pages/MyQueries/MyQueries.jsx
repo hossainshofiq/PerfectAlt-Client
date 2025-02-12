@@ -4,19 +4,26 @@ import useAuthHook from '../../Hooks/useAuthHook';
 import { Link } from 'react-router-dom';
 import MyQueryCard from './MyQueryCard';
 import axios from 'axios';
+import Spinner from '../Spinner';
 
 const MyQueries = () => {
 
     const { user } = useAuthHook();
     const [queries, setQueries] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         // cookie send to server
         axios.get(`https://product-recommendation-system-server-zeta.vercel.app/myQueries?email=${user.email}`, {withCredentials: true})
             .then(res => {
                 setQueries(res.data);
+                setLoading(false);
             })
     }, [user.email]);
+
+    if(loading){
+        return <Spinner></Spinner>
+    }
 
     return (
         <div className="flex flex-col text-center">

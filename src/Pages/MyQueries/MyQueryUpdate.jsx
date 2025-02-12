@@ -93,16 +93,16 @@ const MyQueryUpdate = () => {
                         />
                     </div>
 
-                    {/* Product Image-URL */}
+                    {/* Product Description */}
                     <div className="form-control col-span-1">
                         <label className="label">
                             <span className="label-text">Product Description</span>
                         </label>
                         <input
                             defaultValue={productDescription}
-                            name="productImageUrl"
-                            type="url"
-                            placeholder="Enter product image URL"
+                            name="productDescription"
+                            type="text"
+                            placeholder="Enter product description"
                             className="input input-bordered w-full"
                             required
                         />

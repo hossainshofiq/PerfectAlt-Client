@@ -30,17 +30,17 @@ const MyQueryDetails = () => {
 
                 <div className="card-body flex-1">
                     <h2 className="card-title text-2xl font-bold">{query?.productName}</h2>
-                    <p className="text-gray-700">
+                    <p className="">
                         <span className="font-semibold">Brand:</span> {query?.productBrand}
                     </p>
-                    <p className="text-gray-700">
+                    <p className="">
                         <span className="font-semibold">Query:</span> {query?.queryTitle}
                     </p>
-                    <p className="text-gray-700">
+                    <p className="">
                         <span className="font-semibold">Reason for Boycott:</span>{' '}
                         {query?.boycottingReasonDetails}
                     </p>
-                    <p className="text-gray-700">
+                    <p className="">
                         <span className="font-semibold">Product Description:</span>{' '}
                         {query?.productDescription}
                     </p>
@@ -54,10 +54,10 @@ const MyQueryDetails = () => {
                     />
                     <div className="text-center">
                         <p className="font-semibold">{query?.userName}</p>
-                        <p className="text-sm text-gray-500">{query?.userEmail}</p>
+                        <p className="text-sm">{query?.userEmail}</p>
                     </div>
 
-                    <h4 className='font-medium text-sm md:text-base text-gray-500'>
+                    <h4 className='font-medium text-sm md:text-base'>
                         Recommendation Count: {query?.recommendationCount}
                     </h4>
                 </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const QueriesCard = ({ query }) => {
+    
     return (
         <div key={query._id} className="card bg-base-100 shadow-xl border p-4 md:p-6 rounded-lg">
             <figure className="flex justify-center items-center bg-gray-100 rounded-lg p-4">
@@ -14,13 +15,13 @@ const QueriesCard = ({ query }) => {
 
             <div className="card-body">
                 <h2 className="card-title text-lg md:text-xl font-bold">{query?.productName}</h2>
-                <p className="text-sm md:text-base text-gray-700">
+                <p className="text-sm md:text-base">
                     <span className="font-semibold">Brand:</span> {query?.productBrand}
                 </p>
-                <p className="mt-2 text-sm md:text-base text-gray-700">
+                <p className="mt-2 text-sm md:text-base">
                     <span className="font-semibold">Query:</span> {query?.queryTitle}
                 </p>
-                <p className="mt-2 text-sm md:text-base text-gray-700">
+                <p className="mt-2 text-sm md:text-base">
                     <span className="font-semibold">Reason for Boycott:</span>{' '}
                     {query?.boycottingReasonDetails}
                 </p>
@@ -34,10 +35,10 @@ const QueriesCard = ({ query }) => {
                 />
                 <div className="text-center">
                     <p className="font-semibold">{query?.userName}</p>
-                    <p className="text-sm text-gray-500">{query?.userEmail}</p>
+                    <p className="text-sm">{query?.userEmail}</p>
                 </div>
                 <div className="flex flex-col items-center gap-5">
-                    <h4 className='font-medium text-sm md:text-base text-gray-500'>
+                    <h4 className='font-medium text-sm md:text-base'>
                         Recommendation Count: {query?.recommendationCount}
                     </h4>
                     <Link to={`/recommendationForm/${query._id}`}>

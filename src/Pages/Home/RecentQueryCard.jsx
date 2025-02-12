@@ -40,7 +40,7 @@ const RecentQueryCard = ({ query }) => {
                 </h3> */}
 
                 <div className="card-actions justify-center mt-4">
-                    <Link to={`/recommendationForm/${query._id}`}><button className="btn btn-success px-4 py-2  text-white rounded-md shadow">
+                    <Link className='w-full' to={`/recommendationForm/${query._id}`}><button className="btn btn-success w-full px-4 py-2  text-white rounded-md shadow">
                         See More
                     </button></Link>
                 </div>
