@@ -15,7 +15,7 @@ const MyQueryDetails = () => {
                     <p className=" font-semibold text-black">PerfectAlt / Queries / Query details</p>
                 </div>
             </div>
-            <div className="max-w-7xl mx-auto py-10">
+            <div className="w-11/12 mx-auto py-10">
                 <div className='mx-5'>
                     <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl mb-6">
                         Query Details for: <span className="text-primary">{query?.productName}</span>

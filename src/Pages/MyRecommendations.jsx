@@ -65,7 +65,7 @@ const MyRecommendations = () => {
                     <p className=" font-semibold">PerfectAlt / My recommendation</p>
                 </div>
             </div>
-            <div className="max-w-7xl mx-auto text-center my-10">
+            <div className="w-11/12 mx-auto text-center my-10">
                 {/* <h1 className="font-bold text-xl md:text-3xl lg:text-4xl mb-6 text-gray-800">
                     My Recommendations: {recommendation.length}{' '}
                 </h1> */}

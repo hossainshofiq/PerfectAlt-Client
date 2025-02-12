@@ -12,7 +12,7 @@ const About = () => {
             </div>
 
             {/* About Section */}
-            <div className="w-10/12 mx-auto my-12 p-6 shadow-lg rounded-lg border">
+            <div className="w-11/12 mx-auto my-12 p-6 shadow-lg rounded-lg border">
                 <h2 className="text-2xl md:text-3xl font-semibold mb-4">What is PerfectAlt?</h2>
                 <p className="leading-relaxed">
                     PerfectAlt is an innovative Product Recommendation Platform designed to help users explore, discuss,

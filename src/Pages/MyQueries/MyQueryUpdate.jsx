@@ -41,7 +41,7 @@ const MyQueryUpdate = () => {
                     <p className=" font-semibold text-black">PerfectAlt / Queries / Update query</p>
                 </div>
             </div>
-            <div className="max-w-screen-xl mx-auto px-4 py-8">
+            <div className="w-11/12 mx-auto px-4 py-8">
                 <div className='flex flex-col items-center'>
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
                         Update Query: <span className="text-primary">{productName}</span>
