@@ -27,13 +27,16 @@ const HighlighterBrands = () => {
 
     return (
         <div className='bg-base-200 mt-10'>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center pt-8">
-                Unleash Innovation with our Diverse Brand Selection!
-            </h2>
+            <div className='pt-8 text-center'>
+                <p className="text-green-500 uppercase text-md font-bold">All Brands & Services</p>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+                    Unleash Innovation with our Diverse Brand Selection!
+                </h2>
+            </div>
             <div className="py-6">
                 <div className="w-11/12 mx-auto px-4 text-center">
 
-                    <h3 className="text-xl text-green-500 uppercase font-bold">Our All Brands</h3>
+                    <h3 className="text-xl text-green-500 uppercase font-bold">All Brands</h3>
 
                     {/* all brands */}
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-5 mb-5">
@@ -52,15 +55,15 @@ const HighlighterBrands = () => {
                     </div>
 
                     {/* all services */}
-                    <h3 className="text-xl text-green-500 uppercase font-bold">Our All Services</h3>
+                    <h3 className="text-xl text-green-500 uppercase font-bold">All Services</h3>
                     <div className="mt-5 grid grid-cols-2 md:grid-cols-4 gap-6 mb-5">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
-                                className="flex flex-col items-center justify-center bg-white shadow-md rounded-lg p-6"
+                                className="flex flex-col items-center justify-center shadow-md rounded-lg p-6 border"
                             >
                                 <div className="text-teal-500 text-5xl">{feature.icon}</div>
-                                <p className="mt-4 text-gray-800 font-semibold">{feature.title}</p>
+                                <p className="mt-4 font-semibold">{feature.title}</p>
                             </div>
                         ))}
                     </div>

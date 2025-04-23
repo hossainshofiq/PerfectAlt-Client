@@ -65,10 +65,10 @@ const FeaturedProducts = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {(showAll ? featuredQueries : featuredQueries.slice(0, 4)).map(({ id, title, description, image }) => (
-                            <div key={id} className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:-translate-y-1">
+                            <div key={id} className="border shadow-lg rounded-lg p-6 transition-transform transform hover:-translate-y-1">
                                 <img src={image} alt={title} className="w-full object-cover rounded-lg mb-4" />
-                                <h3 className="text-xl font-semibold text-gray-800 truncate">{title}</h3>
-                                <p className="text-gray-600 mt-2">{description}</p>
+                                <h3 className="text-xl font-semibold truncate">{title}</h3>
+                                <p className="mt-2">{description}</p>
                                 {/* <button className="mt-4 px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600 transition">View Details</button> */}
                             </div>
                         ))}

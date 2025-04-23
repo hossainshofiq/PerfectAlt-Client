@@ -50,7 +50,7 @@ const MyQueryCard = ({ query, queries, setQueries }) => {
 
             <div className="text-center space-y-4">
                 <h2 className="text-lg font-bold pt-2 truncate">{query.productName}</h2>
-                <h2 className="text-md font-medium truncate">Description: <span className=''> {query.productDescription}</span></h2>
+                <h2 className="text-md font-medium line-clamp-2">Description: <span className=''> {query.productDescription}</span></h2>
                 {/* <h3 className="text-md text-gray-500 font-medium">{productBrand}</h3> */}
                 {/* <h3 className="text-md text-gray-500 font-medium">{queryTitle}</h3> */}
                 {/* <h3 className="text-md text-gray-500 font-medium">
