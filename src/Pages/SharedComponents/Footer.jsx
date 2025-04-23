@@ -15,18 +15,16 @@ const Footer = () => {
                     </p>
                 </aside>
                 <nav>
-                    <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <h6 className="footer-title">Company</h6>
+                    <a href='/about' className="link link-hover">About us</a>
+                    <a href='/contact' className="link link-hover">Contact</a>
+                    <a href='/faq' className="link link-hover">FAQ</a>
                 </nav>
                 <nav>
-                    <h6 className="footer-title">Company</h6>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <h6 className="footer-title">Legal</h6>
+                    <a href='/terms&conditions' className="link link-hover">Terms and Conditions</a>
+                    <a href='/privacyPolicy' className="link link-hover">Privacy policy</a>
+                    <a href='/imprint' className="link link-hover">Imprint</a>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Social</h6>
@@ -34,10 +32,10 @@ const Footer = () => {
                         <a href='https://www.facebook.com/A.H.Shofiq/' target='blank' className='hover:cursor-pointer text-3xl'>
                             <FaFacebook className='text-blue-600'></FaFacebook>
                         </a>
-                        <a className='hover:cursor-pointer text-3xl'>
+                        <a href='https://www.linkedin.com/in/hossainshofiq/' target='blank' className='hover:cursor-pointer text-3xl'>
                             <FaLinkedinIn className='text-blue-600'></FaLinkedinIn>
                         </a>
-                        <a target='blank' className='hover:cursor-pointer text-3xl'>
+                        <a href='https://github.com/hossainshofiq' target='blank' className='hover:cursor-pointer text-3xl'>
                             <FaGithub ></FaGithub>
                         </a>
                     </div>
@@ -53,7 +51,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// https://www.linkedin.com/in/md-ali-hossain-shofiq-35150b34b
-
-//https://github.com/hossainshofiq

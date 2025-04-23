@@ -16,6 +16,11 @@ import MyQueryUpdate from './../Pages/MyQueries/MyQueryUpdate';
 import RecommendationForm from '../Pages/RecommendationForm';
 import RecentQueries from './../Pages/Home/RecentQueries';
 import About from '../Pages/About';
+import Faq from '../Pages/Home/Faq';
+import Contact from '../Pages/Contact';
+import TermsAndConditions from './../Pages/TermsAndConditions';
+import PrivacyPolicy from './../Pages/PrivacyPolicy';
+import Imprint from './../Pages/Imprint';
 
 
 const router = createBrowserRouter([
@@ -30,6 +35,26 @@ const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About></About>
+            },
+            {
+                path: '/faq',
+                element: <Faq></Faq>
+            },
+            {
+                path: '/contact',
+                element: <Contact></Contact>
+            },
+            {
+                path: '/terms&conditions',
+                element: <TermsAndConditions></TermsAndConditions>
+            },
+            {
+                path: '/privacyPolicy',
+                element: <PrivacyPolicy></PrivacyPolicy>
+            },
+            {
+                path: '/imprint',
+                element: <Imprint></Imprint>
             },
             {
                 path: '/login',
