@@ -62,7 +62,7 @@ const MyRecommendations = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                 <div className="flex flex-col gap-2">
                     <h1 className="relative text-2xl md:text-3xl lg:text-4xl font-bold">My Recommendations: {recommendation.length}</h1>
-                    <p className=" font-semibold">PerfectAlt / My recommendation</p>
+                    <p className=" font-semibold text-black">PerfectAlt / My recommendation</p>
                 </div>
             </div>
             <div className="w-11/12 mx-auto text-center my-10">
