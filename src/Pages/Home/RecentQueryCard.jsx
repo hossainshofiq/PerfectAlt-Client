@@ -19,7 +19,7 @@ const RecentQueryCard = ({ query }) => {
     };
 
     return (
-        <div className="card bg-white border rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 p-4">
+        <div className="card border rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 p-4">
             {/* <div className="bg-white shadow-lg hover:shadow-xl rounded-lg p-6 transition-transform transform hover:-translate-y-1"> */}
 
             <figure className="flex justify-center">
@@ -31,8 +31,8 @@ const RecentQueryCard = ({ query }) => {
             </figure>
 
             <div className="text-center space-y-4">
-                <h2 className="text-lg font-bold text-gray-700 truncate">{productName}</h2>
-                <h2 className="text-md text-gray-900 font-medium truncate">Description: <span className='text-gray-500'> {productDescription}</span></h2>
+                <h2 className="text-lg font-bold truncate">{productName}</h2>
+                <h2 className="text-md font-medium truncate">Description: <span className=''> {productDescription}</span></h2>
                 {/* <h3 className="text-md text-gray-500 font-medium">{productBrand}</h3> */}
                 {/* <h3 className="text-md text-gray-500 font-medium">{queryTitle}</h3> */}
                 {/* <h3 className="text-md text-gray-500 font-medium">
