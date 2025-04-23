@@ -54,7 +54,7 @@ const MyQueryUpdate = () => {
                     </Link>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-lg border">
+                <div className="p-6 rounded-lg shadow-lg border">
                     <form onSubmit={handleUpdateQuery} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {/* Product Name */}
                         <div className="form-control col-span-1">
