@@ -6,6 +6,7 @@ import ContactUs from './ContactUs';
 import Faq from './Faq';
 import Reviews from './Reviews';
 import FeaturedProducts from './FeaturedProducts';
+import TrendingCategories from './TrendingCategories';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Slider></Slider>
             <RecentQueries></RecentQueries>
             <FeaturedProducts></FeaturedProducts>
+            <TrendingCategories></TrendingCategories>
             <HighlighterBrands></HighlighterBrands>
             <Faq></Faq>
             <Reviews></Reviews>
