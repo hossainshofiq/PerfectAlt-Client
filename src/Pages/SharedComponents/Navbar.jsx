@@ -99,7 +99,7 @@ const Navbar = () => {
                                     alt="User Avatar" />
                                 <Tooltip id='my-tooltip'></Tooltip>
                             </div>
-                            <button onClick={handleSignOut} className='btn btn-error text-black'>Logout</button>
+                            <button onClick={handleSignOut} className='btn btn-error text-white'>Logout</button>
                         </div> :
                         <div>
                             <Link className="btn btn-success text-white rounded-md shadow" to='/login'>Login</Link>

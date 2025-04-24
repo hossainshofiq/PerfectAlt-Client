@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import login from '../assets/Lottie/login.json'
 import Lottie from 'lottie-react';
@@ -6,12 +6,14 @@ import GoogleSignIn from './GoogleSignIn';
 import useAuthHook from '../Hooks/useAuthHook';
 import Swal from 'sweetalert2';
 import axios from 'axios';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Login = () => {
 
     const { signInUser } = useAuthHook();
     const navigate = useNavigate();
     const location = useLocation();
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleLogin = (e) => {
         e.preventDefault()
@@ -25,7 +27,7 @@ const Login = () => {
                 // console.log('Login:', result.user.email);
                 // token created successfully
                 const user = { email: email };
-                axios.post('https://product-recommendation-system-server-zeta.vercel.app/jwt', user, {withCredentials: true})
+                axios.post('https://product-recommendation-system-server-zeta.vercel.app/jwt', user, { withCredentials: true })
                     .then(res => {
                         // console.log(res.data);
                     })
@@ -63,11 +65,12 @@ const Login = () => {
                             </label>
                             <input name='email' type="email" placeholder="enter your email" className="input input-bordered rounded-md" required />
                         </div>
-                        <div className="form-control">
+                        <div className="form-control relative">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input name='password' type="password" placeholder="enter your password" className="input input-bordered rounded-md" required />
+                            <input type={showPassword ? "text" : "password"} name='password' placeholder="enter your password" className="input input-bordered rounded-md" required />
+                            <button type='button' onClick={() => setShowPassword(!showPassword)} className='absolute right-4 bottom-3'> {showPassword ? <FaEyeSlash className='text-xl'></FaEyeSlash> : <FaEye className='text-xl'></FaEye>} </button>
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-success text-white rounded-md shadow">Login</button>

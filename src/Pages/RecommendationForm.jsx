@@ -76,11 +76,11 @@ const RecommendationForm = () => {
 
     return (
         <div>
-            <div className="relative w-full h-44 flex items-center justify-center text-center bg-blue-400 text-black">
+            <div className="relative w-full h-44 flex items-center justify-center text-center bg-blue-400">
                 <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                 <div className="flex flex-col gap-2">
-                    <h1 className="relative text-2xl md:text-3xl lg:text-4xl font-bold">Query Recommendation</h1>
-                    <p className="font-semibold">PerfectAlt / Queries / Recommend</p>
+                    <h1 className="relative text-2xl md:text-3xl lg:text-4xl font-bold text-white">Query Recommendation</h1>
+                    <p className="font-semibold text-black">PerfectAlt / Queries / Recommend</p>
                 </div>
             </div>
             <div className="space-y-12 px-5 py-10 md:px-6 lg:px-8 w-11/12 mx-auto">
