@@ -12,9 +12,10 @@
 **PerfectAlt** is a full-stack **Product Recommendation Platform** that enables users to:  
 
 ✔️ **Add, manage, and view product queries and recommendations**  
-✔️ **Securely authenticate with Firebase (Google/GitHub login)**  
+✔️ **Securely authenticate with Firebase (Google login)**  
 ✔️ **Ensure protected access using JWT authentication**  
 ✔️ **Experience a fully responsive UI with engaging animations**  
+✔️ **Explore Recent products, featured products, highlighted brands, trending categories, FAQs, and reviews**  
 
 ![PerfectAlt Screenshot](src/assets/banner_secreenshot2.jpg)  
 
@@ -63,7 +64,15 @@
 ✔️ Dynamic recommendation count updates  
 
 ### 📱 **Responsive Design**  
-✔️ Fully responsive across **mobile, tablet, and desktop**  
+✔️ Fully responsive across **mobile, tablet, and desktop** 
+
+### 🚀 **Homepage Highlights**  
+✔️ Animated hero/slider section  
+✔️ All queries overview  
+✔️ Featured products display  
+✔️ Highlighted brands section  
+✔️ Trending categories section  
+✔️ FAQs and customer reviews  
 
 ### 🚀 **Navigation**  
 ✔️ Conditional Navbar rendering based on authentication  
@@ -72,6 +81,7 @@
 ✔️ **404 Error Page** – Redirects users to the homepage  
 ✔️ **Recent Queries Section** – Interactive slider for latest queries  
 ✔️ **Animations** – Enhanced UI with creative homepage sections  
+✔️ **UI Alerts** – SweetAlert2 for UI alerts and feedback
 
 ---
 
@@ -157,6 +167,14 @@ npm run dev
 ✔️ `cors` – Enable CORS policies  
 
 ---
+
+---
+
+## 🔐 **User Credentials**
+✔️ Email: shofiq@gmail.com
+✔️ Password: Shofiq
+
+--
 
 ## 🎨 **Design Inspiration**  
 
