@@ -16,11 +16,13 @@ const AddQueryBanner = () => {
                         animate={{ y: [50, 100, 50] }}
                         transition={{ duration: 10, repeat: Infinity }}
                         src={image1}
+                        alt='Add Query1'
                         className="max-w-sm rounded-3xl md:rounded-[32px] lg:rounded-r-[40px] lg:rounded-t-[40px] shadow-2xl mb-10 w-40 md:72 lg:w-72" />
                     <motion.img
                         animate={{ x: [90, 120, 90] }}
                         transition={{ duration: 10, delay: 5, repeat: Infinity }}
                         src={image2}
+                        alt='Add Query2'
                         className="max-w-sm rounded-3xl md:rounded-[32px] lg:rounded-t-[40px] lg:rounded-br-[40px] shadow-2xl mt-10 w-36 md:w-64 lg:w-64" />
 
                 </div>
