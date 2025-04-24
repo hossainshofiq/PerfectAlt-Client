@@ -168,13 +168,11 @@ npm run dev
 
 ---
 
----
-
 ## 🔐 **User Credentials**
-✔️ Email: shofiq@gmail.com
-✔️ Password: Shofiq
+✔️ **Email** : shofiq@gmail.com
+✔️ **Password** : Shofiq
 
---
+---
 
 ## 🎨 **Design Inspiration**  
 
