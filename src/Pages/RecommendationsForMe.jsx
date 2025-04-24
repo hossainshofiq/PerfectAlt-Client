@@ -23,11 +23,11 @@ const RecommendationsForMe = () => {
 
     return (
         <div>
-            <div className="relative w-full h-44 flex items-center justify-center text-center text-black bg-green-400">
+            <div className="relative w-full h-44 flex items-center justify-center text-center bg-green-400">
                 <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                 <div className="flex flex-col gap-2">
-                    <h1 className="relative text-2xl md:text-3xl lg:text-4xl font-bold">Recommendations For Me: {recommendationsForMe.length}</h1>
-                    <p className=" font-semibold">PerfectAlt / Recommendation for me</p>
+                    <h1 className="relative text-2xl md:text-3xl lg:text-4xl text-white font-bold">Recommendations For Me: {recommendationsForMe.length}</h1>
+                    <p className=" font-semibold text-black">PerfectAlt / Recommendation for me</p>
                 </div>
             </div>
             <div className="w-11/12 mx-auto text-center my-10">

@@ -51,6 +51,7 @@ const AddQueryForm = () => {
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-blue-600">
                     Add Your Query
                 </h1>
+                <p className=" font-semibold text-black">PerfectAlt / My Queries / Add query</p>
                 <Link to="/myQueries" className="btn btn-outline flex items-center gap-2 mb-5">
                     <FaArrowLeft className="text-lg"></FaArrowLeft>
                     Back to My Queries

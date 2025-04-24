@@ -8,10 +8,10 @@ const MyQueryDetails = () => {
 
     return (
         <div>
-            <div className="relative w-full h-44 flex items-center justify-center text-center text-black bg-blue-400">
+            <div className="relative w-full h-44 flex items-center justify-center text-center bg-blue-400">
                 <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                 <div className="flex flex-col gap-2">
-                    <h1 className="relative text-2xl md:text-3xl lg:text-4xl font-bold">Query Details</h1>
+                    <h1 className="relative text-2xl md:text-3xl lg:text-4xl text-white font-bold">Query Details</h1>
                     <p className=" font-semibold text-black">PerfectAlt / Queries / Query details</p>
                 </div>
             </div>
